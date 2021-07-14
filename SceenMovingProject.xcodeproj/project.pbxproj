@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5303027CAEBB55167ABB50D8 /* Pods_SceenMovingProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0CFB83968C9A1F0E9710870 /* Pods_SceenMovingProject.framework */; };
 		7F201A2926536121005F7041 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F201A2826536121005F7041 /* AppDelegate.swift */; };
 		7F201A2B26536121005F7041 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F201A2A26536121005F7041 /* SceneDelegate.swift */; };
 		7F201A2D26536121005F7041 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F201A2C26536121005F7041 /* ViewController.swift */; };
@@ -14,10 +15,15 @@
 		7F201A3526536125005F7041 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F201A3326536125005F7041 /* LaunchScreen.storyboard */; };
 		7F201A3F26537DDC005F7041 /* View3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F201A3E26537DDC005F7041 /* View3Controller.swift */; };
 		7F201A4126537DF2005F7041 /* View4Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F201A4026537DF2005F7041 /* View4Controller.swift */; };
+		7F72A8FE269D17AB00F3312E /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F72A8FD269D17AB00F3312E /* Log.swift */; };
+		7F72A900269D1A2A00F3312E /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F72A8FF269D1A2A00F3312E /* Util.swift */; };
+		7F72A902269D7B0A00F3312E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F72A901269D7B0A00F3312E /* BaseViewController.swift */; };
 		7FCD4EAD266604A5003577D5 /* View2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCD4EAC266604A4003577D5 /* View2Controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E2FC237B273301C30B1AA77 /* Pods-SceenMovingProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SceenMovingProject.release.xcconfig"; path = "Target Support Files/Pods-SceenMovingProject/Pods-SceenMovingProject.release.xcconfig"; sourceTree = "<group>"; };
+		6B022B66B2F3BB8ABF3E778F /* Pods-SceenMovingProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SceenMovingProject.debug.xcconfig"; path = "Target Support Files/Pods-SceenMovingProject/Pods-SceenMovingProject.debug.xcconfig"; sourceTree = "<group>"; };
 		7F201A2526536121005F7041 /* SceenMovingProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SceenMovingProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F201A2826536121005F7041 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F201A2A26536121005F7041 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +33,11 @@
 		7F201A3626536125005F7041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F201A3E26537DDC005F7041 /* View3Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View3Controller.swift; sourceTree = "<group>"; };
 		7F201A4026537DF2005F7041 /* View4Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View4Controller.swift; sourceTree = "<group>"; };
+		7F72A8FD269D17AB00F3312E /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		7F72A8FF269D1A2A00F3312E /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		7F72A901269D7B0A00F3312E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7FCD4EAC266604A4003577D5 /* View2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2Controller.swift; sourceTree = "<group>"; };
+		D0CFB83968C9A1F0E9710870 /* Pods_SceenMovingProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SceenMovingProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5303027CAEBB55167ABB50D8 /* Pods_SceenMovingProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19664D1797F66F1795C71432 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0CFB83968C9A1F0E9710870 /* Pods_SceenMovingProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5FE13F4347BA5A6DDEEBEE4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B022B66B2F3BB8ABF3E778F /* Pods-SceenMovingProject.debug.xcconfig */,
+				5E2FC237B273301C30B1AA77 /* Pods-SceenMovingProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7F201A1C26536121005F7041 = {
 			isa = PBXGroup;
 			children = (
 				7F201A2726536121005F7041 /* SceenMovingProject */,
 				7F201A2626536121005F7041 /* Products */,
+				5FE13F4347BA5A6DDEEBEE4D /* Pods */,
+				19664D1797F66F1795C71432 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +90,7 @@
 		7F201A2726536121005F7041 /* SceenMovingProject */ = {
 			isa = PBXGroup;
 			children = (
+				7F72A8FC269D178100F3312E /* utils */,
 				7F201A2826536121005F7041 /* AppDelegate.swift */,
 				7F201A2A26536121005F7041 /* SceneDelegate.swift */,
 				7F201A2C26536121005F7041 /* ViewController.swift */,
@@ -69,8 +100,18 @@
 				7F201A3E26537DDC005F7041 /* View3Controller.swift */,
 				7F201A4026537DF2005F7041 /* View4Controller.swift */,
 				7FCD4EAC266604A4003577D5 /* View2Controller.swift */,
+				7F72A901269D7B0A00F3312E /* BaseViewController.swift */,
 			);
 			path = SceenMovingProject;
+			sourceTree = "<group>";
+		};
+		7F72A8FC269D178100F3312E /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				7F72A8FD269D17AB00F3312E /* Log.swift */,
+				7F72A8FF269D1A2A00F3312E /* Util.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +121,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F201A3926536125005F7041 /* Build configuration list for PBXNativeTarget "SceenMovingProject" */;
 			buildPhases = (
+				7BC751F7560D08D771465AFC /* [CP] Check Pods Manifest.lock */,
 				7F201A2126536121005F7041 /* Sources */,
 				7F201A2226536121005F7041 /* Frameworks */,
 				7F201A2326536121005F7041 /* Resources */,
+				127E9775A1DE1EF5DFB9B547 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -137,14 +180,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		127E9775A1DE1EF5DFB9B547 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SceenMovingProject/Pods-SceenMovingProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SceenMovingProject/Pods-SceenMovingProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SceenMovingProject/Pods-SceenMovingProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BC751F7560D08D771465AFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SceenMovingProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7F201A2126536121005F7041 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7F201A3F26537DDC005F7041 /* View3Controller.swift in Sources */,
+				7F72A8FE269D17AB00F3312E /* Log.swift in Sources */,
 				7FCD4EAD266604A5003577D5 /* View2Controller.swift in Sources */,
+				7F72A900269D1A2A00F3312E /* Util.swift in Sources */,
 				7F201A2D26536121005F7041 /* ViewController.swift in Sources */,
+				7F72A902269D7B0A00F3312E /* BaseViewController.swift in Sources */,
 				7F201A4126537DF2005F7041 /* View4Controller.swift in Sources */,
 				7F201A2926536121005F7041 /* AppDelegate.swift in Sources */,
 				7F201A2B26536121005F7041 /* SceneDelegate.swift in Sources */,
@@ -283,6 +371,7 @@
 		};
 		7F201A3A26536125005F7041 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B022B66B2F3BB8ABF3E778F /* Pods-SceenMovingProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +391,7 @@
 		};
 		7F201A3B26536125005F7041 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E2FC237B273301C30B1AA77 /* Pods-SceenMovingProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

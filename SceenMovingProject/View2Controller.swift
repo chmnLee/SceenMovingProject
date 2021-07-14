@@ -7,15 +7,14 @@
 
 import UIKit
 
-class View2Controller: UIViewController {
+class View2Controller: BaseViewController {
     
     override func viewDidLoad() {
+        fileName = "View2Controller"
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        view.backgroundColor = .white
         
         let label = UILabel()
-        label.text = "View2Controller"
+        label.text = fileName
         label.textColor = .black
         
         view.addSubview(label)
@@ -23,5 +22,33 @@ class View2Controller: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         label.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        
+        let stView = makeButtonStackView(items: ["v1", "v3", "v4"])
+        view.addSubview(stView)
+        
+        stView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        stView.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 10).isActive = true
     }
+    
+    override func onTapButton(_ btn: UIButton) {
+        Log.d("")
+        var vc: UIViewController?
+        
+        switch btn.title(for: .normal) {
+        case "v1":
+            vc = ViewController()
+        case "v3":
+            vc = View3Controller()
+        case "v4":
+            vc = View4Controller()
+        default:
+            Log.d("onTapButton DEFAULT")
+        }
+        
+        if let vc = vc {
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
+
 }
