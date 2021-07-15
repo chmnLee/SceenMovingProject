@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class BaseViewController: UIViewController {
+    var coordinator: MainCoordinator?
     var fileName: String = ""
     var naviRightButton: UIBarButtonItem {
         return UIBarButtonItem(title: "HOME", style: .done, target: self, action: #selector(onTapNavigationBarButton(_:)))

@@ -32,21 +32,15 @@ class View4Controller: BaseViewController {
     
     override func onTapButton(_ btn: UIButton) {
         Log.d("")
-        var vc: UIViewController?
-        
         switch btn.title(for: .normal) {
         case "v1":
-            vc = ViewController()
+            coordinator?.move1()
         case "v2":
-            vc = View2Controller()
+            coordinator?.move2()
         case "v3":
-            vc = View3Controller()
+            coordinator?.move3()
         default:
             Log.d("")
-        }
-        
-        if let vc = vc {
-            navigationController?.pushViewController(vc, animated: true)
         }
     }
 }

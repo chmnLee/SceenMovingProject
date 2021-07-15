@@ -19,6 +19,7 @@
 		7F72A900269D1A2A00F3312E /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F72A8FF269D1A2A00F3312E /* Util.swift */; };
 		7F72A902269D7B0A00F3312E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F72A901269D7B0A00F3312E /* BaseViewController.swift */; };
 		7FCD4EAD266604A5003577D5 /* View2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCD4EAC266604A4003577D5 /* View2Controller.swift */; };
+		7FDA985D269ECE0800D83003 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDA985C269ECE0800D83003 /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		7F72A8FF269D1A2A00F3312E /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		7F72A901269D7B0A00F3312E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7FCD4EAC266604A4003577D5 /* View2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2Controller.swift; sourceTree = "<group>"; };
+		7FDA985C269ECE0800D83003 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		D0CFB83968C9A1F0E9710870 /* Pods_SceenMovingProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SceenMovingProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 		7F201A2726536121005F7041 /* SceenMovingProject */ = {
 			isa = PBXGroup;
 			children = (
+				7FDA985B269E804300D83003 /* coordinator */,
 				7F72A8FC269D178100F3312E /* utils */,
 				7F201A2826536121005F7041 /* AppDelegate.swift */,
 				7F201A2A26536121005F7041 /* SceneDelegate.swift */,
@@ -112,6 +115,14 @@
 				7F72A8FF269D1A2A00F3312E /* Util.swift */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		7FDA985B269E804300D83003 /* coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				7FDA985C269ECE0800D83003 /* MainCoordinator.swift */,
+			);
+			path = coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +241,7 @@
 				7F201A3F26537DDC005F7041 /* View3Controller.swift in Sources */,
 				7F72A8FE269D17AB00F3312E /* Log.swift in Sources */,
 				7FCD4EAD266604A5003577D5 /* View2Controller.swift in Sources */,
+				7FDA985D269ECE0800D83003 /* MainCoordinator.swift in Sources */,
 				7F72A900269D1A2A00F3312E /* Util.swift in Sources */,
 				7F201A2D26536121005F7041 /* ViewController.swift in Sources */,
 				7F72A902269D7B0A00F3312E /* BaseViewController.swift in Sources */,
