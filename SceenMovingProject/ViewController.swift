@@ -7,16 +7,16 @@
 
 import UIKit
 
-class ViewController: BaseViewController {
+class ViewController: UIViewController {
 
     override func viewDidLoad() {
-        fileName = "ViewController"
         super.viewDidLoad()
+        // Do any additional setup after loading the view.
         
         view.backgroundColor = .white
         
         let label = UILabel()
-        label.text = fileName
+        label.text = "ViewController"
         label.textColor = .black
         
         view.addSubview(label)
@@ -25,32 +25,37 @@ class ViewController: BaseViewController {
         label.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         label.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         
-        let stView = makeButtonStackView(items: ["v2", "v3", "v4"])
-        view.addSubview(stView)
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.spacing = 10
         
-        stView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        stView.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 10).isActive = true
+        view.addSubview(stackView)
         
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        stackView.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 10).isActive = true
+        
+        let btnList: [UIButton] = ["v2", "v3", "v4"].map { btnTitle in
+            let bt = UIButton()
+            bt.setTitle(btnTitle, for: .normal)
+            bt.setTitleColor(.black, for: .normal)
+            bt.backgroundColor = .lightGray
+            bt.widthAnchor.constraint(equalToConstant: 100).isActive = true
+            bt.heightAnchor.constraint(equalToConstant: 30).isActive = true
+            bt.addTarget(self, action: #selector(onTapButton(_:)), for: .touchUpInside)
+            
+            return bt
+        }
 
+        for btn in btnList {
+            stackView.addArrangedSubview(btn)
+        }
     }
     
-    override func onTapButton(_ btn: UIButton) {
-        Log.d("")
-        var vc: UIViewController?
-        
-        switch btn.title(for: .normal) {
-        case "v2":
-            vc = View2Controller()
-        case "v3":
-            vc = View3Controller()
-        case "v4":
-            vc = View4Controller()
-        default:
-            Log.d("")
-        }
-        
-        if let vc = vc {
-            navigationController?.pushViewController(vc, animated: true)
+    @objc
+    private func onTapButton(_ btn: UIButton) {
+        if btn.title(for: .normal) == "v2" {
+            
         }
     }
 
